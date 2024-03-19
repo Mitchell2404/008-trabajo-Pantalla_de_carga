@@ -1,0 +1,88 @@
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/012/568/152/non_2x/beautiful-purple-infrared-landscape-in-high-resolution-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+#logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#logo_image{
+    width: 250px;
+}
+#logo_text{
+    position: absolute;
+    left: 125px;
+    top: 275px;
+    transform: translate(-50%, -50%);
+}
+#working-message {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transform: translate(-50%, -50%);
+}
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sub-cont{
+    margin: 20px;
+}
+#dias,
+#horas,
+#minutos,
+#segundos {
+    font-size: 50px;
+    margin-bottom: 5px;
+    padding: 0 35%;
+}
+.texto {
+    font-size: 50px;
+}
+@media screen and (max-width: 1000px) {
+    #logo-container{
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+    #logo_image{
+        width: 150px;
+    }
+    #logo_text{
+        left: 50%;
+        top: 175px;
+    }
+    #dias,
+    #horas,
+    #minutos,
+    #segundos {
+      font-size: 35px;
+    }
+    .texto {
+      font-size: 15px;
+  }
+  }
